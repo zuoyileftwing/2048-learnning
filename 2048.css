@@ -1,5 +1,5 @@
 body{
-    width:960px;
+    width:500px;
     margin:0 auto;
     text-align:center;
 }
@@ -57,3 +57,23 @@ header #score{
     font-size:36px;
     font-weight:bold;
 }
+/*
+@media{min-width:750px} and (max-width:1279px){
+    body{
+        width:750px;
+    }
+    #grid{
+        width:660px;
+        height:660px;
+    }
+    #grid-cell{
+        width:150px;
+        height:150px;
+    }
+    .numbercell{
+        width:150px;
+        height:150px;
+    }
+}
+
+ */
