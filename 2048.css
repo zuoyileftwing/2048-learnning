@@ -2,7 +2,8 @@ body{
     width:500px;
     margin:0 auto;
     text-align:center;
-    overflow-x: hidden;
+    //overflow-x: hidden;
+    overflow:hidden;
 }
 header h1{
     font-size:2em;
