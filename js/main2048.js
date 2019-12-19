@@ -88,6 +88,10 @@ document.addEventListener('touchend',function(event){
         }
 });
 
+document.addEventListener('touchmove',function(event){
+    event.preventDefault();
+});
+
 function newGame(){
     //init board
     init();
