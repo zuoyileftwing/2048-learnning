@@ -19,24 +19,28 @@ $(document).ready(function(){
 $(document).keydown(function(event){
     switch(event.keyCode){
         case 37:
+            event.preventDefault();
             if( moveLeft()){
                 setTimeout(generateRandomNum,200);
             }
                 isGameOver();
             break;
         case 38:
+            event.preventDefault();
             if( moveUp()){
                 setTimeout(generateRandomNum,200);
             }
                 isGameOver();
             break;
         case 39:
+            event.preventDefault();
             if( moveRight()){
                 setTimeout(generateRandomNum,200);
             }
                 isGameOver();
             break;
         case 40:
+            event.preventDefault();
             if( moveDown()){
                 setTimeout(generateRandomNum,200);
             }
@@ -62,6 +66,7 @@ document.addEventListener('touchend',function(event){
    if(Math.abs(deltaX)<0.1*screenX && Math.abs(deltaY) < 0.1*screenY)
        return;
 
+    event.preventDefault();
    if(Math.abs(deltaX) >= Math.abs(deltaY)){
        if(deltaX >=0){
            if( moveRight()){
