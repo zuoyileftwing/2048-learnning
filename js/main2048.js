@@ -92,7 +92,7 @@ document.addEventListener('touchend',function(event){
 document.addEventListener('touchmove',function(event){
     event.preventDefault();
     event.stopPropagation();
-});
+},false);
 
 function newGame(){
     //init board
