@@ -151,3 +151,9 @@ function cannotMove(arr){
         return false;
     return true;
 }
+
+var mo=function(e){e.preventDefault();};
+function stopPageMove(){
+    document.body.style.overflow='hidden';
+    document.addEventListener("touchmove",mo,false);//禁止页面滑动
+}

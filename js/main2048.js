@@ -13,6 +13,7 @@ $(document).ready(function(){
     //给newgame按钮添加事件
     document.getElementById("newgame").addEventListener("click",newGame);
     //$("#newgame").click(newGame);
+    stopPageMove();
 });
 
 $(document).keydown(function(event){
