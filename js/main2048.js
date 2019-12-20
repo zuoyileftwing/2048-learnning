@@ -51,6 +51,10 @@ $(document).keydown(function(event){
     }
 });
 
+document.body.addEventListener('touchmove',function(event){
+    event.preventDefault();
+},{passive:false});
+
 document.addEventListener('touchstart',function(event){
    startX = event.touches[0].pageX;
    startY = event.touches[0].pageY;
